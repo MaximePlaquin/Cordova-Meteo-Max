@@ -1,0 +1,17 @@
+<section ng-controller="WeatherCtrl">
+  <section class="panel panel-padding">
+    <p>Bienvenu sur mon application météo. Elle va vous permettre de consulter la météo selon le lieu que vous rentrez !</p>
+
+
+
+    <form ng-submit ="search()"> // ng-submit pour envoyer une recherche après la validation du bouton rechercher
+      <p>
+        <input type="text" class="text" placeholder="Rechercher une ville" ng-model="city">
+      </p>
+      <p>
+        <input type="submit" class="submit" value="Rechercher">
+      </p>
+
+    </form>
+  </section>
+</section>

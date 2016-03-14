@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html ng-app = "app">
+    <head>
+      <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Hello World</title>
+    </head>
+    <body>
+
+      <header class="header">
+
+        Météo
+      </header>
+
+      <section class="view" ng-view>
+      </section>
+
+      <nav class="footer" ng-controller="NavCtrl">
+        <a href="#home" ng-click="menu='home'" ng-class="{active: menu == 'home'}">  <img src="ico/home.ico" class = "icone-home"/> </a>
+        <a href= "#about" ng-click="menu='about'" ng-class="{active: menu == 'about'}">   <img src="ico/get_info.ico" class = "icone-about"/> </a>
+
+      </nav>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"   integrity="sha256-it5nQKHTz+34HijZJQkpNBIHsjpV8b6QzMJs9tmOBSo="   crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/angular.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/controller/NavCtrl.js"></script>
+        <script type="text/javascript" src="js/controller/WeatherCtrl.js"></script>
+
+
+
+
+    </body>
+</html>
