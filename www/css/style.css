@@ -1,6 +1,7 @@
 body{
 
   background-color: #1f253d;
+  color: white;
 }
 
 .header{
@@ -62,6 +63,13 @@ a:first-child{ border-right: 1px solid #1f253d;}
   height: 60px; line-height: 60px;
   float:right;
 
+}
+
+.row-title{
+  position: absolute;
+  background-color: red;
+  width: 74%;
+  padding: 18px;
 }
 .left{ transform: translate3d(-100%, 0, 0); }
 .center{transform: translate3d(0, 0, 0); }
